@@ -292,6 +292,9 @@ Secure inclusion **must** be started from the binding directly (ie with the cont
 Secure inclusion works in much the same way as non-secure inclusion other than the hard requirement to start inclusion from the binding. Put the binding into inclusion mode, then put the device into inclusion mode. Some secure devices such as locks may also require that you type in a passcode at this point.  Note that the binding will only remain in inclusion mode for 30 seconds, so inclusion of the device must start within this period.
 
 
+### Removing Failed/Phantom Nodes
+Failed/Phantom nodes can occur when a device is no longer powered or becomes defective. These devices cannot be removed from openHAB using the exclude mode. For Aeotec Z-Stick Gen 5+ and above you can use the third party Z-Wave PC Controller 5 in Simplicity Studios. Instructions on [installation of the software](https://aeotec.freshdesk.com/support/solutions/articles/6000226205-z-wave-pc-controller-5-configuration-tool-installation-) and [removing nodes](https://aeotec.freshdesk.com/support/solutions/articles/6000253483-remove-failed-phantom-node-with-pc-controller-5) is on Aeotec’s website.
+
 ### Device Initialisation
 
 As soon as the device is discovered (eg included into the network) it is added to the inbox. At this point we still don't know the manufacturer etc.
